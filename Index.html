@@ -5,9 +5,21 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <div class="project-name">
-      Kanye West and Ron Swanson Conversation Simulator
+    <div class="navigation">
+      <div class="nav-left">
+        <div class="project-icon"></div>
+        <div class="project-nav-name"></div>
+      </div>
+
+      <div class="nav-mid">
+        Kanye West and Ron Swanson Conversation Simulator
+      </div>
+
+      <div class="nav-right">
+        <button>IDK WHAT THIS DOES YET</button>
+      </div>
     </div>
+
 
     <div class="conversation-space">
       <div class="kanye-bubble">
@@ -27,18 +39,12 @@
       </div>
     </div>
 
-
     <div>
-      <p></p>
-      <button onclick="
-        KanyeQuote();
-      ">Click for quote</button>
-    </div>
-    <div>
-      <p></p>
-      <button onclick="
-        SwansonQuote();
-      ">Click for qutoe</button>
+      <button class="js-convo-button" onclick="
+       Convo(); 
+      ">
+        Generate Conversation
+      </button>
     </div>
     <script src="/scripts.js"></script>
   </body>
