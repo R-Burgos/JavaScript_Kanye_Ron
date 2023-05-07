@@ -7,7 +7,7 @@ const KanyeQuote = () => {
 
 const KanyedQuote = (data) => {
   const blockQuote = document
-  .getElementById('kanyed-quote');
+  .getElementById('quote1');
   blockQuote.classList.add
   ('text-style');
   blockQuote.innerHTML = data.quote;
@@ -23,7 +23,7 @@ const SwansonQuote = () => {
 
 const SwansonedQuote = (data) => {
   const blockQuote = document
-  .getElementById('swansoned-quote');
+  .getElementById('quote2');
   blockQuote.classList.add('text-style');
   blockQuote.innerHTML = data;
 }

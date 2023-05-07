@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/general.css">
     <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/conversation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -60,40 +61,36 @@
     <!--END OF SECTION HERO-->
   
     <!--START MAIN SECTION-->
-    <!--END OF MAIN SECTION-->
-
-
-    <div class="conversation-space">
-      <div class="kanye-bubble">
-        <p id="kanyed-quote"></p>
+    <section class="main">
+      <div class="character-container">
+        <img src="/Kanye_NoBackground.png" alt="Kanye" class="character-image">
+        <div class="quote-bubble">
+          <span id="quote1" class="quote-text">Quote from Kanye</span>
+        </div>
       </div>
-      <div class="swanson-bubble">
-        <p id="swansoned-quote"></p>
+  
+      <div class="character-container">
+        <img src="/Ron_NoBackground.png" alt="Ron" class="character-image">
+        <div class="quote-bubble">
+          <span id="quote2" class="quote-text">Quote from Ron</span>
+        </div>
       </div>
-    </div>
-
-    <div class="image-space">
-      <div class="kanye-image-space">
-        <img  class="test-image" src="/Kanye_NoBackground.png">
-      </div>
-      <div class="swanson-image-space">
-        <img class="test-image" src="/Ron_NoBackground.png">
-      </div>
-    </div>
-
-    <!--FOOTER START-->
-    <footer class="footer">
-      
-    </footer>
-    <!--END OF FOOTER-->
-
-    <div>
+    </section>
+    <div class="convo-button-div">
       <button class="js-convo-button" onclick="
        Convo(); 
       ">
         Generate Conversation
       </button>
     </div>
+    <!--END OF MAIN SECTION-->
+
+
+    <!--FOOTER START-->
+    <footer class="footer">
+      
+    </footer>
+    <!--END OF FOOTER-->
     <script src="/scripts.js"></script>
   </body>
 </html>
