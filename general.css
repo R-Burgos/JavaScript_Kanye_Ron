@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.link-button:hover,
+button:hover{
+  background-color: rgb(143, 133, 199);
+}
+
+.link-button:active,
+button:active{
+  background-color: rgb(133, 123, 199);
+}
+
