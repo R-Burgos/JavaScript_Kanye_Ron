@@ -61,24 +61,42 @@
     <!--END OF SECTION HERO-->
   
     <!--START MAIN SECTION-->
+
+    <!--
+      Things to do:
+      1. Quotes need to delayed slightly. Kanye's quote will go first and after a short amount of time Ron's will go. This will simulate an actual conversation.
+      2. I would like to add a text bubble, comic book style, to be included with the quotes.
+      3. Find/use better images for Kanye and Ron.
+      4. Adjust position of Kanye and Ron on the page, this will also demand that I adjust the position of the text bubble and how the quotes are displayed.
+      5. Convert Generate Conversation button into an autoplay button and implement functionality.
+      6. Create a stop button.
+      7. Add contact info into the footer, along with links to socials.
+      8. Last step is to create links for the code languages listed at the top of the page.
+    -->
+
+
+
     <section class="main">
       <div class="character-container">
-        <img src="/Kanye_NoBackground.png" alt="Kanye" class="character-image">
+        <img src="/Kanye_NoBackground.png" alt="Character 1" class="character-image">
         <div class="quote-bubble">
-          <span id="quote1" class="quote-text">Quote from Kanye</span>
+          <span id="quote1" class="quote-text">
+            Quote from Kanye</span>
         </div>
       </div>
   
       <div class="character-container">
-        <img src="/Ron_NoBackground.png" alt="Ron" class="character-image">
+        <img src="/Ron_NoBackground.png" alt="Character 2" class="character-image">
         <div class="quote-bubble">
-          <span id="quote2" class="quote-text">Quote from Ron</span>
+          <span id="quote2" class="quote-text">
+            Quote from Ron</span>
         </div>
       </div>
     </section>
     <div class="convo-button-div">
       <button class="js-convo-button" onclick="
-       Convo(); 
+        fetchKanyeQuote(1);
+        fetchRonQuote(2);
       ">
         Generate Conversation
       </button>

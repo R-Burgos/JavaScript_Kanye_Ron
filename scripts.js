@@ -38,8 +38,37 @@ function Convo(){
 
 
 
+async function fetchKanyeQuote(characterId) {
+  const respone = await fetch('https://api.kanye.rest');
+  const data = await respone.json();
+  const quote = data.quote;
+  const quoteElement = document.getElementById(`quote${characterId}`);
+  quoteElement.textContent = quote;
+  fadeInQuoteBubble(characterId);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
+}
 
 
+async function fetchRonQuote(characterId){
+  const respone = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
+  const data = await respone.json();    
+  const quote = data;
+  const quoteElement = document.getElementById(`quote${characterId}`);
+  quoteElement.textContent = quote;
+  fadeInQuoteBubble(characterId);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
+}
+
+
+function fadeInQuoteBubble(characterId){
+  const quoteBubble = document.querySelector(`#quote${characterId}`).parentNode;
+  quoteBubble.style.opacity = 1;
+}
+
+function fadeOutQutoeBubble(characterId){
+  const quoteBubble = document.querySelector(`#quote${characterId}`).parentNode;
+  quoteBubble.style.opacity = 0;
+}
 
 
 
