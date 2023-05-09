@@ -1,3 +1,4 @@
+/*
 //Kanye-----------------------------
 const KanyeQuote = () => {
   fetch('https://api.kanye.rest')
@@ -35,28 +36,40 @@ function Convo(){
   SwansonQuote();
 }
 //-----------------------------------
-
+*/
 
 
 async function fetchKanyeQuote(characterId) {
   const respone = await fetch('https://api.kanye.rest');
   const data = await respone.json();
-  const quote = data.quote;
+  let quote = data.quote;
   const quoteElement = document.getElementById(`quote${characterId}`);
-  quoteElement.textContent = quote;
+
+  if(quote.length > 42){
+    quote = quote.replace(/\n/g, '<br>');
+    quote = quote.replace(/(.{42})(?:\s|$)/g, '$1<br>');
+  }
+
+  quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 1000);
 }
 
 
 async function fetchRonQuote(characterId){
   const respone = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
-  const data = await respone.json();    
-  const quote = data;
+  const data = await respone.json(); 
+  let quote = data[0];
   const quoteElement = document.getElementById(`quote${characterId}`);
-  quoteElement.textContent = quote;
+
+  if(quote.length > 42){
+    quote = quote.replace(/\n/g, '<br>');
+    quote = quote.replace(/(.{42})(?:\s|$)/g, '$1<br>');
+  }
+  
+  quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 1000);
 }
 
 
@@ -69,8 +82,6 @@ function fadeOutQutoeBubble(characterId){
   const quoteBubble = document.querySelector(`#quote${characterId}`).parentNode;
   quoteBubble.style.opacity = 0;
 }
-
-
 
 /*
 const toLearn = () => {
