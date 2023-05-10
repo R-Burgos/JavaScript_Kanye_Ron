@@ -52,7 +52,7 @@ async function fetchKanyeQuote(characterId) {
 
   quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 1000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 20000);
 }
 
 
@@ -69,7 +69,7 @@ async function fetchRonQuote(characterId){
   
   quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 1000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 20000);
 }
 
 
