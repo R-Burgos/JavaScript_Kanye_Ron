@@ -1,44 +1,5 @@
-/*
-//Kanye-----------------------------
-const KanyeQuote = () => {
-  fetch('https://api.kanye.rest')
-  .then(res => res.json())
-  .then(data => KanyedQuote(data))
-}
 
-const KanyedQuote = (data) => {
-  const blockQuote = document
-  .getElementById('quote1');
-  blockQuote.classList.add
-  ('text-style');
-  blockQuote.innerHTML = data.quote;
-}
-//-----------------------------------
-
-//Swanson----------------------------
-const SwansonQuote = () => {
-  fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
-  .then(res => res.json())
-  .then(data => SwansonedQuote(data))
-}
-
-const SwansonedQuote = (data) => {
-  const blockQuote = document
-  .getElementById('quote2');
-  blockQuote.classList.add('text-style');
-  blockQuote.innerHTML = data;
-}
-//-----------------------------------
-
-//Both-------------------------------
-function Convo(){
-  KanyeQuote();
-  SwansonQuote();
-}
-//-----------------------------------
-*/
-
-
+//KANYE AND RON QUOTE FETCH----------------------------------------------------
 async function fetchKanyeQuote(characterId) {
   const respone = await fetch('https://api.kanye.rest');
   const data = await respone.json();
@@ -52,7 +13,7 @@ async function fetchKanyeQuote(characterId) {
 
   quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 20000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
 }
 
 
@@ -65,14 +26,15 @@ async function fetchRonQuote(characterId){
   if(quote.length > 42){
     quote = quote.replace(/\n/g, '<br>');
     quote = quote.replace(/(.{42})(?:\s|$)/g, '$1<br>');
+    quote = quote.replace(/\.\.\./g, '...<br>');
   }
   
   quoteElement.innerHTML = quote;
   fadeInQuoteBubble(characterId);
-  setTimeout(() => fadeOutQutoeBubble(characterId), 20000);
+  setTimeout(() => fadeOutQutoeBubble(characterId), 10000);
 }
 
-
+//FADEIN AND FADEOUT BUBBLES--------------------------------------------------------
 function fadeInQuoteBubble(characterId){
   const quoteBubble = document.querySelector(`#quote${characterId}`).parentNode;
   quoteBubble.style.opacity = 1;
@@ -83,9 +45,29 @@ function fadeOutQutoeBubble(characterId){
   quoteBubble.style.opacity = 0;
 }
 
-/*
-const toLearn = () => {
-  const check1 = fetch('https://api.kanye.rest').then(res => res.json());
-  console.log(check1);
+//AUTOPLAY SECTION------------------------------------------------------------------
+let isAutoPlaying = false;
+let intervalId;
+let currentSpeaker = 1; 
+
+async function autoPlay() {
+  if(!isAutoPlaying) {
+    await fetchKanyeQuote(1);
+
+    intervalId = setInterval(async () => {
+      if (currentSpeaker === 1) {
+        await fetchRonQuote(2);
+        currentSpeaker = 2;
+      } else {
+        await fetchKanyeQuote(1);
+        currentSpeaker = 1;
+      }
+    }, 12000);
+
+    isAutoPlaying = true;
+
+  } else {
+    clearInterval(intervalId);
+    isAutoPlaying = false;
+  }
 }
-*/

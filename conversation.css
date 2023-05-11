@@ -15,8 +15,8 @@
 }
 
 .character-image {
-  width: 350px; /* Adjust the width as per your image size */
-  height: 350px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -30,10 +30,6 @@
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-}
-
-.character-container:hover .quote-bubble {
-  opacity: 1;
 }
 
 .quote-text {
