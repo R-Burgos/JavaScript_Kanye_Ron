@@ -1,4 +1,58 @@
-.footer{
-  height: 400px;
+footer {
+  min-height: 250px;
   background-color: rgb(212,194,252);
+  color: rgb(40, 38, 44);
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  font-size: 16px;
+  width: 100vw;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  justify-content: space-around;
+  align-items: first baseline;
+  width: 80vw;
+}
+
+.footer-social {
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer-social-image {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(20, 36, 138);
+  font-weight: 700;
+}
+
+.footer-headers {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-input {
+  padding
 }

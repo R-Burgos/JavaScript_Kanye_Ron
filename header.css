@@ -65,6 +65,11 @@
   margin-left: 10px;
 }
 
+.header-link {
+  text-decoration: none;
+  color: rgb(20, 36, 138);
+}
+
 .hero-header{
   height: 700px;
   background-color: rgb(212,194,252);

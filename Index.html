@@ -25,7 +25,10 @@
       <!--TODO: Have each code language link to documentation-->
       <div class="mid-section">
         <div class="top-title">
-          JavaScript || API || HTML || CSS 
+          <a href="" target="_blank" class="header-link">JavaScript</a> || 
+          <a href="" target="_blank" class="header-link">API</a> || 
+          <a href="" target="_blank" class="header-link">HTML</a> || 
+          <a href="" target="_blank" class="header-link">CSS</a>
         </div>
       </div>
 
@@ -64,18 +67,23 @@
 
     <!--
       Things to do:
-      1. (DONE) Quotes need to delayed slightly. Kanye's quote will go first and after a short amount of time Ron's will go. This will simulate an actual conversation.
-      2.(DONE) I would like to add a text bubble, comic book style, to be included with the quotes.
-      3. (DONE) Find/use better images for Kanye and Ron.
-      4. (DONE)Adjust position of Kanye and Ron on the page, this will also demand that I adjust the position of the text bubble and how the quotes are displayed.
-      5. (DONE) Convert Generate Conversation button into an autoplay button and implement functionality.
-      6. (NOT NEEDED) Create a stop button.
-      7. Add contact info into the footer, along with links to socials.
-      8. Last step is to create links for the code languages listed at the top of the page.
-      9. (DONE) Remove hover from text bubbles
-      10.(DONE) Check if quotes have '...', that messes up the quote bubble.
+      1. Add contact info into the footer, along with links to socials.
+      2. Buttons to GitHub and LinkedIn need hover and active CSS.
+      3. Refactor code.
+      4. Clean up CSS.
+      5. Clean up HTML and class names.
+      ?. Last step is to create links for the code languages listed at the top of the page.
     -->
 
+    <!--
+      maybe new color template?
+
+      rgb(22,12,40) dark purple
+      rgb(239,203,104) naples yellow
+      rgb(225,239,230) honeydew
+      rgb(174,183,179) ash gray
+      rgb(0,4,17) rich black
+    -->
 
 
     <section class="main">
@@ -107,8 +115,54 @@
     <!--END OF MAIN SECTION-->
 
     <!--FOOTER START-->
-    <footer class="footer">
-      
+    <footer class="footer-main">
+
+      <div class="footer-row">
+
+        <div class="footer-left">
+          <h3 class="footer-headers">Summary</h3>
+          <p>
+            This conversation simulator utilizes two APIs to simulate a conversation.
+            The APIs provide quotes from Kanye West and Ron Swanson. 
+            Click the auto play button to generate a conversation.
+            A redesign of a project from my time at 
+            <a href="https://truecoders.io/" target="_blank" 
+            class="footer-link">TrueCoders.</a> 
+            Initially created as a C# console application. (Click 
+            <a href="https://github.com/R-Burgos/Kanye_Rest" 
+            target="_blank" class="footer-link">HERE</a> 
+            to check that version out!) 
+          </p>
+        </div>
+
+        <div class="footer-mid">
+          <h3 class="footer-headers">Check the code out!</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li><a href="https://kanye.rest" target="_blank" class="footer-link">
+              Kanye West Quote API
+            </a></li>
+            <li><a href="https://github.com/jamesseanwright/ron-swanson-quotes/blob/master/README.md" 
+              target="_blank" class="footer-link">
+                Ron Swanson Quote API
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3 class="footer-headers">Social Links</h3>
+          <div class="footer-social">
+            <a href="https://github.com/R-Burgos" target="_blank">
+              <img src="github-mark.png" class="footer-social-image">
+            </a>
+            <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
+              <img src="/LI-In-Bug.png" class="footer-social-image">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!--END OF FOOTER-->
     <script src="/scripts.js"></script>

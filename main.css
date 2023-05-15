@@ -1,5 +1,5 @@
 .conversation-space,
-.image-space{
+.image-space {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -7,38 +7,38 @@
 .kanye-bubble,
 .swanson-bubble,
 .kanye-image-space,
-.swanson-image-space{
+.swanson-image-space {
   display: flex;
   align-items: center;
 }
 
-.kanye-bubble{
+.kanye-bubble {
   justify-content: left;
   margin: 10px 50px 10px 100px;
 }
 
-.swanson-bubble{
+.swanson-bubble {
   justify-content: right;
   margin: 10px 100px 10px 50px;
 }
 
-.kanye-image-space{
+.kanye-image-space {
   justify-content: left;
   margin: 10px 10px 10px 50px;
 }
 
-.swanson-image-space{
+.swanson-image-space {
   justify-content: right;
   margin: 10px 50px 10px 10px;
 }
 
-.convo-button-div{
+.convo-button-div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.js-convo-button{
+.js-convo-button {
   font-size: 'Lexend', sans-serif;
   font-size: 14px;
   font-weight: 600;
