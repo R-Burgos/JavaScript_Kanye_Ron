@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(249, 245, 255);
+  background-color: rgb(234, 246, 255);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -45,9 +45,9 @@
   font-size: 'Lexend', sans-serif;
   font-size: 12px;
   font-weight: 600;
-  color: rgb(249, 245, 255);
+  color: rgb(234, 246, 255);
   border: none;
-  background-color: rgb(153, 143, 199);
+  background-color: rgb(42, 42, 114);
   padding: 14px;
   border-radius: 40px;
 }
@@ -67,15 +67,16 @@
 
 .header-link {
   text-decoration: none;
-  color: rgb(20, 36, 138);
+  color: rgb(42, 42, 114);
 }
 
 .hero-header{
   height: 700px;
-  background-color: rgb(212,194,252);
+  background-color: rgb(42, 42, 114);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(234, 246, 255);
 }
 
 .hero-container{
@@ -111,8 +112,8 @@
 }
 
 .anchor-button{
-  background-color: rgb(153, 143, 199);
-  color: rgb(249, 245, 255);
+  background-color: rgb(234, 246, 255);
+  color: rgb(35, 37, 40);
   border: none;
   font-family: 'Lexend', sans-serif;
   font-size: 18px;
@@ -138,6 +139,6 @@
 .hero-anchor-image{
   width: 20px;
   height: 20px;
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 5px;
 }
