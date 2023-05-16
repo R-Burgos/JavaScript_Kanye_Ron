@@ -6,16 +6,4 @@ body {
 
 button {
   cursor: pointer;
-  transition: background-color 0.15s;
 }
-
-.link-button:hover,
-button:hover {
-  background-color: rgb(52, 52, 124);
-}
-
-.link-button:active,
-button:active {
-  background-color: rgb(65, 65, 140);
-}
-

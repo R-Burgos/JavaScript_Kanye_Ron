@@ -36,6 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .js-convo-button {
@@ -49,4 +50,42 @@
   border-radius: 40px;
   margin-top: 20px;
   margin-bottom: 40px;
+  transition: background-color 0.2s;
+}
+
+.js-convo-button:hover {
+  background-color: rgb(62, 62, 134);
+}
+
+.js-convo-button:active {
+  background-color: rgb(82, 82, 154);
+}
+
+.how-it-works-div {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: rgb(154, 82, 118);
+}
+
+.how-it-works-h3 {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.how-it-works-p {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
 }
