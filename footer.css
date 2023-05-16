@@ -42,8 +42,9 @@ footer {
 
 .footer-link {
   text-decoration: none;
-  color: rgb(240, 93, 94);
+  color: rgb(154, 82, 118);
   font-weight: 700;
+  transition: color 0.15s;
 }
 
 .footer-headers {
@@ -56,4 +57,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer-link:hover {
+  color: rgb(174, 102, 138);
+}
+
+.footer-link:active {
+  color: rgb(194, 122, 158);
 }

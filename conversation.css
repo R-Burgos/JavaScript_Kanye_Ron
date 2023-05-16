@@ -33,8 +33,10 @@
 }
 
 .quote-text {
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
-  color: rgb(40, 38, 44);
+  font-weight: 600;
+  color: rgb(21, 21, 57);
   position: absolute;
   left: 10%;
   bottom: 50%;

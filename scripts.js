@@ -72,3 +72,13 @@ async function autoPlay() {
     document.querySelector('.js-convo-button').innerHTML = 'Auto Play (off)';
   }
 }
+
+//SCROLL SECTION------------------------------------------------------------------
+
+
+function scrollToDiv(targetId) {
+  const targetElement = document.getElementById(targetId);
+  if(targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}

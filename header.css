@@ -11,6 +11,7 @@
   background-color: rgb(234, 246, 255);
   padding-top: 10px;
   padding-bottom: 10px;
+  color: rgb(154, 82, 118);
 }
 
 .left-section{
@@ -63,20 +64,31 @@
   font-family: 'Lexend', sans-serif;
   font-weight: 400;
   margin-left: 10px;
+  /*color: rgb(154, 82, 118);*/
 }
 
 .header-link {
   text-decoration: none;
-  color: rgb(42, 42, 114);
+  color: rgb(154, 82, 118);
+  transition: color 0.15s;
+}
+
+.header-link:hover {
+  color: rgb(114, 42, 78);
+}
+
+.header-link:active {
+  color: rgb(94, 22, 58);
 }
 
 .hero-header{
   height: 700px;
-  background-color: rgb(42, 42, 114);
   display: flex;
   align-items: center;
   justify-content: center;
   color: rgb(234, 246, 255);
+  background: rgb(42,42,114);
+  background: linear-gradient(180deg, rgba(42, 42, 114, 1) 20%, rgba(234, 246, 255, 1) 100%);
 }
 
 .hero-container{
@@ -113,7 +125,7 @@
 
 .anchor-button{
   background-color: rgb(234, 246, 255);
-  color: rgb(35, 37, 40);
+  color: rgb(42, 42, 144);
   border: none;
   font-family: 'Lexend', sans-serif;
   font-size: 18px;
