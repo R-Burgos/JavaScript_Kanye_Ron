@@ -66,9 +66,11 @@ async function autoPlay() {
 
     isAutoPlaying = true;
     document.querySelector('.js-convo-button').innerHTML = 'Auto Play (on)';
+    document.querySelector('.js-convo-button').classList.add('is-on');
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+    document.querySelector('.js-convo-button').classList.remove('is-on');
     document.querySelector('.js-convo-button').innerHTML = 'Auto Play (off)';
   }
 }
