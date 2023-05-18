@@ -1,4 +1,15 @@
-.main {
+/* List of classes in Characters
+
+characters
+  characters-container
+    characters-image
+    characters-quote-bubble
+      characters-quote-text
+*/
+
+/* Styles for Characters */
+
+.characters {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,7 +17,7 @@
   margin-top: 200px;
 }
 
-.character-container {
+.characters-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,13 +25,15 @@
   margin-bottom: 20px;
 }
 
-.character-image {
+.characters-image {
   width: 500px;
   height: 500px;
   object-fit: cover;
 }
 
-.quote-bubble {
+/* Styles for Character Quote Bubble and Text */
+
+.characters-quote-bubble {
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -32,7 +45,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.quote-text {
+.characters-quote-text {
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: 600;
