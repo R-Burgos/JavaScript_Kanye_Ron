@@ -1,0 +1,114 @@
+/* Styles for Header */
+/* List of classes in Header
+
+  header-left-section
+    header-left-image
+    header-left-name
+
+  header-middle-section
+    header-middle-code-link-div
+    header-middle-link
+
+  header-right-section  
+    header-right-documentation
+    
+*/
+
+.header {
+  z-index: 999;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(234, 246, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(42, 42, 114);
+}
+
+/* Styles for Left Section of the Header */
+
+.header-left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.header-left-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.header-left-name {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+/* Styles for Middle Section of the Header */
+
+.header-middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+}
+
+.header-middle-code-link-div {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header-middle-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(154, 82, 118);
+  transition: color 0.15s;
+}
+
+.header-middle-link:hover {
+  color: rgb(114, 42, 78);
+}
+
+.header-middle-link:active {
+  color: rgb(94, 22, 58);
+}
+
+/* Styles for Right Section of the Header */
+
+.header-right-section {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.header-right-documentation {
+  font-size: 'Lexend', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(234, 246, 255);
+  border: none;
+  background-color: rgb(42, 42, 114);
+  padding: 14px;
+  border-radius: 40px;
+  transition: background-color 0.15s;
+}
+
+.header-right-documentation:hover {
+  background-color: rgb(62, 62, 134);
+}
+
+.header-right-documentation:active {
+  background-color: rgb(82, 82, 154);
+}

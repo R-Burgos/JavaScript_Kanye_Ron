@@ -7,13 +7,20 @@ footer {
   bottom: 0;
   font-size: 16px;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*
 .footer-main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+not needed anymore
+*/
+
 
 .footer-row {
   display: grid;
@@ -23,6 +30,7 @@ footer {
   align-items: first baseline;
   width: 80vw;
 }
+
 
 .footer-social {
   background-color: rgb(234, 246, 255);

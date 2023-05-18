@@ -2,10 +2,20 @@
 <html>
   <head>
     <title>Kanye and Ron Simulator</title>
+
+    <!--New stylesheet implementation-->
+    <link rel="stylesheet" href="/styles-header.css">
+    <link rel="stylesheet" href="/styles-footer.css">
+
+    <!---->
+
+
+
+
+
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/general.css">
-    <link rel="stylesheet" href="/footer.css">
     <link rel="stylesheet" href="/conversation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,27 +24,25 @@
   <body>
     <!--HEADER START-->
     <header class="header">
-      <div class="left-section">
-          <div class="project-icon">
-            <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
-              <img class="header-icon" src="/ruben-image.jfif">
-            </a>
-          </div>
-          <div class="me">R-Burgos</div>
+      <div class="header-left-section">
+          <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
+            <img class="header-left-image" src="/ruben-image.jfif">
+          </a>
+          <div class="header-left-name">R-Burgos</div>
       </div>
 
       <!--TODO: Have each code language link to documentation-->
-      <div class="mid-section">
-        <div class="top-title">
-          <a href="" target="_blank" class="header-link">JavaScript</a> || 
-          <a href="" target="_blank" class="header-link">API</a> || 
-          <a href="" target="_blank" class="header-link">HTML</a> || 
-          <a href="" target="_blank" class="header-link">CSS</a>
+      <div class="header-middle-section">
+        <div class="header-middle-code-link-div">
+          <a href="" target="_blank" class="header-middle-link">JavaScript</a> || 
+          <a href="" target="_blank" class="header-middle-link">API</a> || 
+          <a href="" target="_blank" class="header-middle-link">HTML</a> || 
+          <a href="" target="_blank" class="header-middle-link">CSS</a>
         </div>
       </div>
 
-      <div class="right-section">
-        <a href="" target="_blank" class="project-documentation">
+      <div class="header-right-section">
+        <a href="" target="_blank" class="header-right-documentation">
           Project Documentation
         </a>
       </div>
@@ -118,28 +126,22 @@
     <!--END OF MAIN SECTION-->
 
     <!--FOOTER START-->
-    <footer class="footer-main">
 
-      <div class="footer-row">
-
-        <div class="footer-left">
-          <h3 class="footer-headers">Summary</h3>
-          <p>
-            This conversation simulator utilizes two APIs to simulate a conversation.
-            The APIs provide quotes from Kanye West and Ron Swanson. 
-            Click the auto play button to generate a conversation.
-            A redesign of a project from my time at 
-            <a href="https://truecoders.io/" target="_blank" 
-            class="footer-link">TrueCoders.</a> 
-            Initially created as a C# console application. (Click 
-            <a href="https://github.com/R-Burgos/Kanye_Rest" 
-            target="_blank" class="footer-link">HERE</a> 
-            to check that version out!) 
-          </p>
+    <footer class="footer">
+      <div class="footer-left-section">
+        <div class="footer-left-title">
+          Summary
         </div>
+        <div>
+          This conversation simulator utilizes two APIs to simulate a conversation. The APIs provide quotes from Kanye West and Ron Swanson. Click the auto play button to generate a conversation. A redesign of a project from my time at <a href="https://truecoders.io/" target="_blank" class="footer-link">TrueCoders.</a> Initially created as a C# console application. (Click <a href="https://github.com/R-Burgos/Kanye_Rest" target="_blank" class="footer-link">HERE</a> to check that version out!)
+        </div>
+      </div>
 
-        <div class="footer-mid">
-          <h3 class="footer-headers">Check the code out!</h3>
+      <div class="footer-middle-section">
+        <div class="footer-middle-title">
+          Code Preview
+        </div>
+        <div>
           <ul>
             <li><a href="" target="_blank" class="footer-link">
               JavaScript
@@ -159,17 +161,22 @@
               </a></li>
           </ul>
         </div>
+      </div>
 
-        <div class="footer-right">
-          <h3 class="footer-headers">Social Links</h3>
-          <div class="footer-social">
-            <a href="https://github.com/R-Burgos" target="_blank">
-              <img src="github-mark.png" class="footer-social-image">
-            </a>
-            <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
-              <img src="/LI-In-Bug.png" class="footer-social-image">
-            </a>
-          </div>
+      <div class="footer-right-section">
+        <div class="footer-right-title">
+          Social Links
+        </div>
+        <div class="footer-right-content">
+          <a href="https://github.com/R-Burgos" target="_blank">
+            <img src="github-mark.png" class="footer-social-image">
+          </a>
+          <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
+            <img src="/LI-In-Bug.png" class="footer-social-image">
+          </a>
+        </div>
+        <div class="footer-right-email">
+          Email: code.rburgos@gmail.com
         </div>
       </div>
     </footer>

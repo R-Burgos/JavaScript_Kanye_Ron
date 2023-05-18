@@ -1,0 +1,126 @@
+/* Styles for Footer */
+/* List of classes in Footer
+
+  footer-left-section
+    footer-left-title
+    footer-link
+
+  footer-middle-section
+    footer-middle-title
+    footer-link
+
+  footer-right-section
+    footer-right-title
+    footer-right-content
+      footer-social-image
+    footer-right-email
+
+*/
+
+.footer {
+  min-height: 200px;
+  background-color: rgb(42, 42, 114);
+  color: rgb(234, 246, 255);
+  padding: 3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:center;
+}
+
+/* Styles for Left Section of the Footer */
+
+.footer-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  min-width: 30vw;
+}
+
+.footer-left-title {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 16px;
+  text-decoration: overline;
+}
+
+/* Styles for Middle Section of the Footer*/
+
+.footer-middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 30vw;
+}
+
+.footer-middle-title {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: overline;
+}
+
+/* Styles for Right Section of the Footer */
+
+.footer-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  min-width: 30vw;
+}
+
+.footer-right-title {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-decoration: overline;
+  margin-bottom: 16px;
+}
+
+.footer-right-content {
+  background-color: rgb(234, 246, 255);
+  display: flex;
+  border-radius: 100px;
+  width: min-content;
+  align-self: left;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-social-image {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin: 10px;
+}
+
+.footer-right-email {
+  margin-left: 15px;
+}
+
+/* Styles for Links in the Footer */
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(154, 82, 118);
+  font-weight: 700;
+  transition: color 0.15s;
+}
+
+.footer-link:hover {
+  color: rgb(174, 102, 138);
+}
+
+.footer-link:active {
+  color: rgb(194, 122, 158);
+}
