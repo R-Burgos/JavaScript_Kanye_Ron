@@ -3,25 +3,22 @@
   <head>
     <title>Kanye and Ron Simulator</title>
 
-    <!--New stylesheet implementation-->
     <link rel="stylesheet" href="/styles-general.css">
     <link rel="stylesheet" href="/styles-header.css">
     <link rel="stylesheet" href="/styles-hero.css">
     <link rel="stylesheet" href="/styles-characters.css">
+    <link rel="stylesheet" href="/styles-content.css">
     <link rel="stylesheet" href="/styles-footer.css">
-
-    <!---->
-
-
-    <link rel="stylesheet" href="/main.css">
 
     <!--Google Fonts: Lexend-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   </head>
+
   <body>
-    <!--HEADER START-->
+    <!--START HEADER SECTION-->
     <header class="header">
       <div class="header-left-section">
           <a href="https://www.linkedin.com/in/rubenburgos89/" target="_blank">
@@ -48,7 +45,7 @@
     </header>
     <!--END OF HEADER-->
 
-    <!--SECTION HERO START-->
+    <!--START HERO SECTION-->
     <section class="hero">
       <div class="hero-container">
         <h1 class="hero-title">
@@ -70,16 +67,15 @@
         </div>
       </div>
     </section>
-    <!--END OF SECTION HERO-->
+    <!--END OF HERO-->
   
-    <!--START MAIN SECTION-->
-
     <!--
       Things to do:
       1. Footer and Header - check out code links need href!
       2. Refactor code.
       3. Clean up CSS.
       4. Clean up HTML and class names.
+      5. Button clicked off, message should terminate.
       ?. Last step is to create links for the code languages listed at the top of the page.
     -->
 
@@ -95,7 +91,7 @@
       </div>
   
       <div class="characters-container">
-        <img src="/Ron_NoBackground.png" alt="Character 2" class="character-image">
+        <img src="/Ron_NoBackground.png" alt="Character 2" class="characters-image">
         <div class="characters-quote-bubble">
           <span id="quote2" class="characters-quote-text">
             Quote from Ron</span>
@@ -103,11 +99,12 @@
         </div>
       </div>
     </section>
-    <!--END OF CHARACTERS SECTION-->
+    <!--END OF CHARACTERS-->
 
-    <div class="how-it-works-div">
-      <h3 class="how-it-works-h3">HOW IT WORKS</h3>
-      <p class="how-it-works-p">
+    <!--START CONTENT SECTION-->
+    <div class="content-summary-div">
+      <h3 class="content-summary-title">HOW IT WORKS</h3>
+      <p class="content-summary">
         When you click the 'Auto Play' button, a text bubble will pop
          up with a quote from Kanye West and Ron Swanson. To simulate 
          a conversation, each character will take a turn in 'talking'. 
@@ -116,7 +113,7 @@
       </p>
     </div>
 
-    <div class="convo-button-div">
+    <div class="content-button-div">
       <button class="js-convo-button" onclick="
         autoPlay();
         scrollToDiv('text-bubble');
@@ -124,10 +121,9 @@
         Auto Play (off)
       </button>
     </div>
-    <!--END OF MAIN SECTION-->
+    <!--END OF CONTENT-->
 
-    <!--FOOTER START-->
-
+    <!--START FOOTER SECTION-->
     <footer class="footer">
       <div class="footer-left-section">
         <div class="footer-left-title">
@@ -182,6 +178,8 @@
       </div>
     </footer>
     <!--END OF FOOTER-->
+
     <script src="/scripts.js"></script>
+    
   </body>
 </html>

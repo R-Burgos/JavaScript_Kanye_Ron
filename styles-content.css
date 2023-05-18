@@ -1,0 +1,88 @@
+/* List of classes in Content
+
+content-summary-div
+  content-summary-title
+  content-summary
+
+content-button-div
+  js-convo-button
+  is-on
+
+*/
+
+/* Styles for Content Summary */
+
+.content-summary-div {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: rgb(154, 82, 118);
+}
+
+.content-summary-title {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.content-summary {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 800px;
+}
+
+/* Styles for Content Button Div*/
+
+.content-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* Styles for JS Convo Button and when on */
+
+.js-convo-button {
+  font-size: 'Lexend', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(234, 246, 255);
+  border: none;
+  background-color: rgb(42, 42, 114);
+  padding: 20px 40px;
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  transition: background-color 0.2s;
+}
+
+.js-convo-button:hover {
+  background-color: rgb(62, 62, 134);
+}
+
+.js-convo-button:active {
+  background-color: rgb(82, 82, 154);
+}
+
+.is-on {
+  background-color: rgb(154, 82, 118);
+  transition: background-color 0.2s;
+}
+
+.is-on:hover {
+  background-color: rgb(174, 102, 138);
+}
+
+.is-on:active {
+  background-color: rgb(194, 122, 158);
+}
