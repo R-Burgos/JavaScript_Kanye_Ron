@@ -52,6 +52,7 @@ let currentSpeaker = 1;
 
 async function autoPlay() {
   if(!isAutoPlaying) {
+    scrollToDiv('text-bubble')
     await fetchKanyeQuote(1);
 
     intervalId = setInterval(async () => {
@@ -68,6 +69,8 @@ async function autoPlay() {
     document.querySelector('.js-convo-button').innerHTML = 'Auto Play (on)';
     document.querySelector('.js-convo-button').classList.add('is-on');
   } else {
+    fadeOutQutoeBubble('1');
+    fadeOutQutoeBubble('2');
     clearInterval(intervalId);
     isAutoPlaying = false;
     document.querySelector('.js-convo-button').classList.remove('is-on');
