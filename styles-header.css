@@ -1,4 +1,3 @@
-/* Styles for Header */
 /* List of classes in Header
 
   header-left-section
@@ -13,6 +12,8 @@
     header-right-documentation
     
 */
+
+/* Styles for Header */
 
 .header {
   z-index: 999;
