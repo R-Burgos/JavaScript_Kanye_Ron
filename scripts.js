@@ -65,7 +65,7 @@ async function autoPlay() {
     }, 12000);
 
     isAutoPlaying = true;
-    document.querySelector('.js-convo-button').innerHTML = 'Auto Play (on)';
+    document.querySelector('.js-convo-button').innerHTML = 'Autoplay (on)';
     document.querySelector('.js-convo-button').classList.add('is-on');
   } else {
     fadeOutQutoeBubble('1');
@@ -73,7 +73,7 @@ async function autoPlay() {
     clearInterval(intervalId);
     isAutoPlaying = false;
     document.querySelector('.js-convo-button').classList.remove('is-on');
-    document.querySelector('.js-convo-button').innerHTML = 'Auto Play (off)';
+    document.querySelector('.js-convo-button').innerHTML = 'Autoplay (off)';
   }
 }
 
