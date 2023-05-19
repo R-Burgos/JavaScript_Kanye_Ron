@@ -52,7 +52,7 @@ let currentSpeaker = 1;
 
 async function autoPlay() {
   if(!isAutoPlaying) {
-    scrollToDiv('text-bubble')
+    scrollToDiv('characters')
     await fetchKanyeQuote(1);
 
     intervalId = setInterval(async () => {
@@ -84,6 +84,12 @@ async function autoPlay() {
 function scrollToDiv(targetId) {
   const targetElement = document.getElementById(targetId);
   if(targetElement) {
-    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    const yOffset = window.innerHeight - targetElement.getBoundingClientRect().height;
+    const y = targetElement.getBoundingClientRect().top + window.pageYOffset - yOffset;
+    window.scrollTo({top: y, behavior: 'smooth' });
+
+
+    //targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 }
