@@ -1,4 +1,3 @@
-
 //KANYE AND RON QUOTE FETCH----------------------------------------------------
 async function fetchKanyeQuote(characterId) {
   const respone = await fetch('https://api.kanye.rest');
@@ -79,17 +78,11 @@ async function autoPlay() {
 }
 
 //SCROLL SECTION------------------------------------------------------------------
-
-
 function scrollToDiv(targetId) {
   const targetElement = document.getElementById(targetId);
   if(targetElement) {
-
     const yOffset = window.innerHeight - targetElement.getBoundingClientRect().height;
     const y = targetElement.getBoundingClientRect().top + window.pageYOffset - yOffset;
     window.scrollTo({top: y, behavior: 'smooth' });
-
-
-    //targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 }
