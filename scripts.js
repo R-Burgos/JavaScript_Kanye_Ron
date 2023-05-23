@@ -22,9 +22,9 @@ async function fetchRonQuote(characterId){
   let quote = data[0];
   const quoteElement = document.getElementById(`quote${characterId}`);
 
-  if(quote.length > 42){
+  if(quote.length > 38){
     quote = quote.replace(/\n/g, '<br>');
-    quote = quote.replace(/(.{42})(?:\s|$)/g, '$1<br>');
+    quote = quote.replace(/(.{38})(?:\s|$)/g, '$1<br>');
     quote = quote.replace(/\.\.\./g, '...<br>');
   }
   
